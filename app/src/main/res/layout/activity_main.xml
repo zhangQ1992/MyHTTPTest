@@ -11,15 +11,19 @@
     android:orientation="vertical"
     tools:context="com.example.qing.myhttptest.MainActivity">
 
-    <EditText
-        android:id="@+id/edt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
     <Button
+        android:layout_gravity="center"
         android:id="@+id/btn"
         android:text="获取http数据"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <WebView
+        android:id="@+id/wb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </WebView>
 
     <ScrollView
         android:layout_width="match_parent"
