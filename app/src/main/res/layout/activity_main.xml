@@ -12,11 +12,6 @@
     tools:context="com.example.qing.myhttptest.MainActivity">
 
 
-    <EditText
-        android:id="@+id/et"
-        android:hint="输入地址"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
     <Button
         android:id="@+id/btn_html"
         android:layout_width="match_parent"
@@ -37,7 +32,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="获取http图片数据并显示" />
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/http_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
 
     <ImageView
         android:id="@+id/http_img"
@@ -45,25 +47,16 @@
         android:layout_height="wrap_content" />
 
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/http_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </ScrollView>
 
             <WebView
                 android:id="@+id/wb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"></WebView>
 
-    </RelativeLayout>
+    </FrameLayout>
 
 
 </LinearLayout>
